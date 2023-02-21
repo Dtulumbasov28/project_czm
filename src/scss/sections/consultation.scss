@@ -1,0 +1,147 @@
+.consultation {
+  background-color: $colorDarkElem;
+  // .consultation__container
+
+  &__container {
+  }
+
+  // .consultation__body
+
+  &__body {
+    display: flex;
+    align-items: center;
+    column-gap: 130px;
+  }
+
+  // .consultation__col-img
+
+  &__col-img {
+    max-width: 520px;
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+
+  // .consultation__col-form
+
+  &__col-form {
+    max-width: 412px;
+  }
+
+  // .consultation__title
+
+  &__title {
+    color: $colorElem;
+
+    margin-bottom: 24px;
+
+    & span {
+      color: #fff;
+    }
+  }
+
+  // .consultation__form
+
+  &__form {
+  }
+}
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 24px;
+  // .form__desc
+
+  &__desc {
+    color: #fff;
+
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  // .form__input
+
+  &__input {
+    color: $mainColor;
+    width: 47%;
+    outline: none;
+    border-radius: var(--radius);
+    padding: 10px 15px;
+    &::placeholder {
+      color: $mainColor;
+    }
+  }
+
+  // .form__input-name
+
+  &__input-name {
+  }
+
+  // .form__input-tel
+
+  &__input-tel {
+  }
+
+  // .form__button
+
+  &__button {
+    cursor: pointer;
+
+    width: 100%;
+  }
+
+  // .form__checkbox-group
+
+  &__checkbox-group {
+    display: flex;
+    column-gap: 12px;
+  }
+  // .form__checkbox
+
+  &__checkbox {
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+  
+    &:checked + .form__checkbox-label::before {
+      border-color: $colorElem;
+      background: $colorElem url("@img/checked.svg") center center no-repeat;
+      background-size: 90%;
+    }
+    &:disabled + .form__checkbox-label::before {
+      background-color: #e9ecef;
+    }
+  }
+
+  // .form__checkbox-label
+
+  &__checkbox-label {
+    font-size: 10px;
+    color: #9a89c9;
+
+    display: inline-flex;
+    align-items: center;
+    column-gap: 5px;
+  
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      border: 2px solid $colorElem;
+      border-radius: 4px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 50% 50%;
+      flex-shrink: 0;
+    }
+
+    & a {
+      border-bottom: 1px solid #9a89c9;
+    }
+  }
+}
+.button {
+}
