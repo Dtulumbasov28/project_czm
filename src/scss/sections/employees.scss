@@ -1,0 +1,98 @@
+.employees {
+    background-color: #fff;
+  // .employees__container
+
+  &__container {
+  }
+
+  // .employees__title
+
+  &__title {
+  }
+
+  // .employees__body
+
+  &__body {
+  }
+
+  // .employees__list
+
+  &__list {
+  }
+
+  // .employees__item
+
+  &__item {
+    border-radius: var(--radius);
+    background-color: $colorSection;
+  }
+
+  // .employees__item-img
+
+  &__item-img {
+    border-radius: var(--radius);
+    overflow: hidden;
+    height: 450px;
+    margin-bottom: 22px;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  // .employees__item-text
+
+  &__item-text {
+    text-align: center;
+    padding-bottom: 40px;
+  }
+
+  // .employees__item-name
+
+  &__item-name {
+    font-size: 22px;
+    font-weight: 700;
+
+    margin-bottom: 10px;
+  }
+
+  // .employees__item-post
+
+  &__item-post {
+  }
+
+  // .employees__navigation
+
+  &__navigation {
+  }
+
+  // .employees__button-prev
+
+  &__button-prev {
+  }
+
+  // .employees__button-next
+
+  &__button-next {
+  }
+}
+.title {
+}
+.button {
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.swiper-navigation {
+}
+.swiper-button {
+}
+.swiper-button-prev {
+}
+.swiper-button-next {
+}

@@ -24,7 +24,7 @@ $fontSize: rem(16); // где 14(px) - размер шрифта по умолч
 
 // Основные цвета
 $mainColor: #2c2c2c; // Цвет шрифта по умолчанию
-$mainColorSection: #efeff9; // Цвет секций по умолчанию
+$colorSection: #efeff9; // Цвет секций по умолчанию
 $colorElem: #4e44bf; // Цвет элементов' по умолчанию
 $colorDarkElem: #211d3a; // Цвет шрифта по умолчанию №2
 
@@ -163,3 +163,7 @@ body {
 @import "sections/services";
 @import "sections/consultation";
 @import "sections/prices";
+@import "sections/gallery";
+@import "sections/employees";
+@import "sections/about";
+@import "sections/stages";

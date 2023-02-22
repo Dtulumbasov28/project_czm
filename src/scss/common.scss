@@ -1,7 +1,7 @@
 // Заголовки, общие БЄМ блоки и проче...
 section {
   padding: 48px 0;
-  background-color: #EFEFF9;
+  background-color: #efeff9;
 }
 .title {
   font-size: 32px;
@@ -93,5 +93,32 @@ section {
 
   @media (max-width: $mobile) {
     right: 20px;
+  }
+}
+
+// Анимации
+
+.spollers__arrow {
+  & svg {
+    transition: all 0.3s;
+  }
+}
+.spollers__button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  column-gap: 130px;
+  background-color: #fff;
+  border-radius: var(--radius);
+  padding: 18px 10px 18px 20px;
+
+  &._spoller-active {
+    .spollers__arrow {
+      & svg {
+        transform: scale(1, -1);
+        transition: all 0.3s;
+      }
+    }
   }
 }
