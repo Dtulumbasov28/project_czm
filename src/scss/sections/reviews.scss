@@ -1,0 +1,342 @@
+.reviews {
+  background-color: #fff;
+  // .reviews__container
+
+  &__container {
+
+  }
+
+  // .reviews__title
+
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  // .reviews__desc
+
+  &__desc {
+    padding-right: 36%;
+    margin-bottom: 48px;
+  }
+
+  // .reviews__body
+
+  &__body {
+    margin-bottom: 60px;
+  }
+  // .reviews__button
+
+  &__button {
+  }
+}
+.title {
+}
+.reviews-tabs {
+  // .reviews-tabs__buttons
+
+  &__buttons {
+    display: flex;
+    column-gap: 24px;
+    margin-bottom: 36px;
+  }
+
+  // .reviews-tabs__item
+
+  &__item {
+    &._tab-active {
+      & .reviews-tabs__button {
+        background-color: $colorElem;
+        color: #fff;
+      }
+    }
+  }
+
+  // .reviews-tabs__button
+
+  &__button {
+    font-weight: unset;
+    color: $mainColor;
+
+    background-color: $colorSection;
+    padding: 10px 44px;
+  }
+
+  // .reviews-tabs__content
+
+  &__content {
+  }
+
+  // .reviews-tabs__body
+
+  &__body {
+  }
+
+  // .reviews-tabs__body-wrapper
+
+  &__body-wrapper {
+  }
+}
+.button {
+}
+
+.reviews-wh {
+  // .reviews-wh__body
+
+  &__body {
+  }
+
+  // .reviews-wh__slide
+
+  &__slide {
+    height: 450px;
+    border-radius: var(--radius);
+    overflow: hidden;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  // .reviews-wh__img
+
+  &__img {
+  }
+
+  // .reviews-wh__navigation
+
+  &__navigation {
+  }
+
+  // .reviews-wh__button-prev
+
+  &__button-prev {
+  }
+
+  // .reviews-wh__button-next
+
+  &__button-next {
+  }
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.swiper-navigation {
+}
+.swiper-button {
+}
+.swiper-button-prev {
+}
+.swiper-button-next {
+}
+.reviews-audio {
+  // .reviews-audio__body
+
+  &__body {
+  }
+
+  // .reviews-audio__slide
+
+  &__slide {
+  }
+
+  // .reviews-audio__info
+
+  &__info {
+  }
+
+  // .reviews-audio__avatar
+
+  &__avatar {
+  }
+
+  // .reviews-audio__person
+
+  &__person {
+  }
+
+  // .reviews-audio__name
+
+  &__name {
+  }
+
+  // .reviews-audio__date
+
+  &__date {
+  }
+
+  // .reviews-audio__audio
+
+  &__audio {
+    // box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+
+    margin-bottom: 24px;
+    & audio {
+      width: 100%;
+    }
+  }
+
+  // .reviews-audio__desc
+
+  &__desc {
+  }
+
+  // .reviews-audio__navigation
+
+  &__navigation {
+  }
+
+  // .reviews-audio__button-prev
+
+  &__button-prev {
+    top: unset;
+    bottom: 0;
+  }
+
+  // .reviews-audio__button-next
+
+  &__button-next {
+    top: unset;
+    bottom: 0;
+  }
+}
+.reviews-slide {
+  background-color: #dbdbf4;
+  border-radius: var(--radius);
+  padding: 24px 24px 90px 24px;
+}
+.reviews-info {
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+  margin-bottom: 36px;
+}
+.reviews-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  overflow: hidden;
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.reviews-person {
+}
+.reviews-name {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.reviews-date {
+}
+.reviews-desc {
+  font-size: 12px;
+}
+.reviews-video {
+  // .reviews-video__body
+
+  &__body {
+  }
+
+  // .reviews-video__slide
+
+  &__slide {
+  }
+
+  // .reviews-video__video
+
+  &__video {
+    height: 240px;
+    border-radius: var(--radius);
+    overflow: hidden;
+    margin-bottom: 24px;
+    & video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  // .reviews-video__desc
+
+  &__desc {
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  // .reviews-video__navigation
+
+  &__navigation {
+  }
+
+  // .reviews-video__button-prev
+
+  &__button-prev {
+  }
+
+  // .reviews-video__button-next
+
+  &__button-next {
+  }
+}
+.reviews-text {
+  // .reviews-text__body
+
+  &__body {
+  }
+
+  // .reviews-text__slide
+
+  &__slide {
+  }
+
+  // .reviews-text__info
+
+  &__info {
+  }
+
+  // .reviews-text__avatar
+
+  &__avatar {
+  }
+
+  // .reviews-text__person
+
+  &__person {
+  }
+
+  // .reviews-text__name
+
+  &__name {
+  }
+
+  // .reviews-text__date
+
+  &__date {
+  }
+
+  // .reviews-text__desc
+
+  &__desc {
+  }
+
+  // .reviews-text__navigation
+
+  &__navigation {
+  }
+
+  // .reviews-text__button-prev
+
+  &__button-prev {
+  }
+
+  // .reviews-text__button-next
+
+  &__button-next {
+  }
+}
