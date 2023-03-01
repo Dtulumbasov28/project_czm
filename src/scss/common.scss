@@ -11,6 +11,7 @@ section {
   margin-bottom: 48px;
 }
 .button {
+  display: inline-block;
   font-weight: 700;
   color: #fff;
   white-space: nowrap;
@@ -18,6 +19,36 @@ section {
   padding: 10px 15px;
   border-radius: var(--radius);
   background-color: $colorElem;
+}
+
+.cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.radius {
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.marker {
+  &::before {
+    content: "";
+    background: $colorElem url("@img/checked.svg") center center no-repeat;
+    background-size: 100%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid $colorElem;
+    border-radius: 4px;
+  }
+}
+
+.quote {
+  color: #4c4c4c;
+  padding: 24px;
+  background-color: #fff;
+  border-radius: var(--radius);
 }
 
 // Блок соц. сетей
@@ -119,6 +150,131 @@ section {
         transform: scale(1, -1);
         transition: all 0.3s;
       }
+    }
+  }
+}
+
+// Форма
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 24px;
+
+  // .form__title
+
+  &__title {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+
+    &::before {
+      content: "";
+      background: $colorElem url("@img/phone.svg") center center no-repeat;
+      background-size: 100%;
+      display: block;
+      width: 40px;
+      height: 40px;
+      border: 8px solid $colorElem;
+      border-radius: var(--radius);
+    }
+  }
+
+  // .form__desc
+
+  &__desc {
+    color: #fff;
+
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  // .form__input
+
+  &__input {
+    color: $mainColor;
+    width: 47%;
+    outline: none;
+    border-radius: var(--radius);
+    padding: 10px 15px;
+    &::placeholder {
+      color: $mainColor;
+    }
+  }
+
+  // .form__input-name
+
+  &__input-name {
+  }
+
+  // .form__input-tel
+
+  &__input-tel {
+  }
+
+  // .form__button
+
+  &__button {
+    cursor: pointer;
+
+    width: 100%;
+  }
+
+  // .form__checkbox-group
+
+  &__checkbox-group {
+    display: flex;
+    column-gap: 12px;
+  }
+  // .form__checkbox
+
+  &__checkbox {
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+
+    &:checked + .form__checkbox-label::before {
+      border-color: $colorElem;
+      background: $colorElem url("@img/checked.svg") center center no-repeat;
+      background-size: 90%;
+    }
+    &:disabled + .form__checkbox-label::before {
+      background-color: #e9ecef;
+    }
+  }
+
+  // .form__checkbox-label
+
+  &__checkbox-label {
+    font-size: 10px;
+    color: #9a89c9;
+
+    display: inline-flex;
+    align-items: center;
+    column-gap: 8px;
+    white-space: nowrap;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      border: 2px solid $colorElem;
+      border-radius: 4px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 50% 50%;
+      flex-shrink: 0;
+    }
+
+    & a {
+      border-bottom: 1px solid #9a89c9;
     }
   }
 }

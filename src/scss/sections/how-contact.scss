@@ -1,0 +1,128 @@
+.how-contact {
+  background-color: $colorDarkElem;
+
+  // .how-contact__container
+
+  &__container {
+  }
+
+  // .how-contact__body
+
+  &__body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 130px;
+  }
+
+  // .how-contact__col-text
+
+  &__col-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    row-gap: 24px;
+    width: 40%;
+    max-width: 340px;
+
+    color: #fff;
+  }
+
+  // .how-contact__title
+
+  &__title {
+    margin-bottom: unset;
+  }
+
+  // .how-contact__desc
+
+  &__desc {
+    margin-bottom: 12px;
+  }
+
+  // .how-contact__phone
+
+  &__phone {
+    display: flex;
+    flex-direction: column;
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+
+  // .how-contact__phone-link
+
+  &__phone-link {
+    font-size: 22px;
+    font-weight: 700;
+    color: $colorElem;
+  }
+
+  // .how-contact__phone-desc
+
+  &__phone-desc {
+    color: $colorElem;
+    opacity: 0.5;
+  }
+
+  // .how-contact__col-form
+
+  &__col-form {
+    width: 58%;
+    max-width: 420px;
+  }
+}
+.consultation {
+  // .consultation__form
+
+  &__form {
+  }
+}
+.form {
+  // .form__title
+
+
+
+  // .form__desc
+
+  &__desc {
+  }
+
+  // .form__input
+
+  &__input {
+  }
+
+  // .form__input-name
+
+  &__input-name {
+  }
+
+  // .form__input-tel
+
+  &__input-tel {
+  }
+
+  // .form__button
+
+  &__button {
+  }
+
+  // .form__checkbox-group
+
+  &__checkbox-group {
+  }
+
+  // .form__checkbox
+
+  &__checkbox {
+  }
+
+  // .form__checkbox-label
+
+  &__checkbox-label {
+  }
+}
+.button {
+}

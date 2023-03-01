@@ -1,0 +1,52 @@
+.map {
+  // .map__container
+
+  &__container {
+    max-width: unset;
+    padding: unset;
+  }
+
+  // .map__body
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  // .map__adress-wrap
+
+  &__adress-wrap {
+    width: 100%;
+    position: relative;
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+  // .map__adress
+
+  &__adress {
+    font-size: 22px;
+    font-weight: 700;
+
+    position: absolute;
+    top: -450px;
+    left: 80px;
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+    background-color: #fff;
+    padding: 22px;
+    box-shadow: 2px 2px 20px 0px #00000033;
+    white-space: nowrap;
+
+    &::before {
+      content: "";
+      background: $colorElem url("@img/home.svg") center center no-repeat;
+      background-size: 100%;
+      display: block;
+      width: 40px;
+      height: 40px;
+      border: 10px solid $colorElem;
+      border-radius: var(--radius);
+    }
+  }
+}

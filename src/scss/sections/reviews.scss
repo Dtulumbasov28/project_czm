@@ -3,7 +3,6 @@
   // .reviews__container
 
   &__container {
-
   }
 
   // .reviews__title
@@ -27,6 +26,9 @@
   // .reviews__button
 
   &__button {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
   }
 }
 .title {
@@ -89,13 +91,6 @@
 
   &__slide {
     height: 450px;
-    border-radius: var(--radius);
-    overflow: hidden;
-    & img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
   }
 
   // .reviews-wh__img
@@ -172,10 +167,12 @@
 
   &__audio {
     // box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    height: 44px;
 
     margin-bottom: 24px;
     & audio {
       width: 100%;
+      border-radius: 20px;
     }
   }
 
@@ -205,7 +202,6 @@
 }
 .reviews-slide {
   background-color: #dbdbf4;
-  border-radius: var(--radius);
   padding: 24px 24px 90px 24px;
 }
 .reviews-info {
@@ -219,11 +215,6 @@
   height: 56px;
   border-radius: 50%;
   overflow: hidden;
-  & img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
 }
 .reviews-person {
 }
@@ -252,14 +243,7 @@
 
   &__video {
     height: 240px;
-    border-radius: var(--radius);
-    overflow: hidden;
     margin-bottom: 24px;
-    & video {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
   }
 
   // .reviews-video__desc
@@ -277,11 +261,13 @@
   // .reviews-video__button-prev
 
   &__button-prev {
+    top: 120px;
   }
 
   // .reviews-video__button-next
 
   &__button-next {
+    top: 120px;
   }
 }
 .reviews-text {
@@ -333,10 +319,14 @@
   // .reviews-text__button-prev
 
   &__button-prev {
+    top: unset;
+    bottom: 0;
   }
 
   // .reviews-text__button-next
 
   &__button-next {
+    top: unset;
+    bottom: 0;
   }
 }

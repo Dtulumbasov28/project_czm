@@ -1,5 +1,5 @@
 .employees {
-    background-color: #fff;
+  background-color: #fff;
   // .employees__container
 
   &__container {
@@ -23,23 +23,14 @@
   // .employees__item
 
   &__item {
-    border-radius: var(--radius);
     background-color: $colorSection;
   }
 
   // .employees__item-img
 
   &__item-img {
-    border-radius: var(--radius);
-    overflow: hidden;
     height: 450px;
     margin-bottom: 22px;
-
-    & img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
   }
 
   // .employees__item-text

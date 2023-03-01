@@ -1,0 +1,64 @@
+.our-clinic {
+  // .our-clinic__container
+
+  &__container {
+  }
+
+  // .our-clinic__body
+
+  &__body {
+    display: flex;
+    column-gap: 42px;
+  }
+
+  // .our-clinic__col-text
+
+  &__col-text {
+    max-width: 400px;
+  }
+
+  // .our-clinic__title
+
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  // .our-clinic__text
+
+  &__text {
+    margin-bottom: 24px;
+  }
+
+  // .our-clinic__button
+
+  &__button {
+  }
+
+  // .our-clinic__col-img
+
+  &__col-img {
+    max-width: 850px;
+  }
+
+  // .our-clinic__img-wrapper
+
+  &__img-wrapper {
+  }
+
+  // .our-clinic__img-slide
+
+  &__img-slide {
+  }
+}
+.title {
+}
+.button {
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.cover {
+}

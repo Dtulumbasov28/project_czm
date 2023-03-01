@@ -23,7 +23,6 @@ function resizeScrenText() {
 }
 resizeScrenText();
 
-
 // Маска для номера телефона
 
 window.addEventListener("DOMContentLoaded", function () {
@@ -93,3 +92,4 @@ function scrollToTop() {
   }
 }
 scrollToTop();
+

@@ -39,14 +39,6 @@
   // .gallery__item
 
   &__item {
-    border-radius: var(--radius);
-    overflow: hidden;
-
-    & img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
   }
 
   // .gallery__navigation
