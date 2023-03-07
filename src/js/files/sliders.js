@@ -279,7 +279,37 @@ function initSliders() {
     // События
     on: {},
   });
-  var recommendationsSlider = new Swiper(".recommendations-tabs__body", {
+  var rehabSlider = new Swiper(".recommendations-rehab", {
+    modules: [Navigation],
+    loop: true,
+    slidesPerView: 4,
+    spaceBetween: 24,
+    speed: 500,
+
+    // Кнопки "влево/вправо"
+    navigation: {
+      prevEl: ".recommendations__button-prev",
+      nextEl: ".recommendations__button-next",
+    },
+
+    // Брейкпоинты
+
+    // breakpoints: {
+    // 	320: {
+    // 		slidesPerView: 1,
+    // 		spaceBetween: 0,
+    // 		autoHeight: true,
+    // 	},
+    // 	768: {
+    // 		slidesPerView: 2,
+    // 		spaceBetween: 20,
+    // 	},
+    // },
+
+    // События
+    on: {},
+  });
+  var drugSlider = new Swiper(".recommendations-drug", {
     modules: [Navigation],
     loop: true,
     slidesPerView: 4,

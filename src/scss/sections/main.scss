@@ -11,6 +11,18 @@
 
   &__body {
     color: #fff;
+
+    padding-right: 50%;
+
+    @media (max-width: $notebook) {
+      padding-right: 30%;
+    }
+    @media (max-width: $tablet) {
+      padding-right: 22%;
+    }
+    @media (max-width: $mobile) {
+      padding-right: unset;
+    }
   }
 
   // .main__title
@@ -19,6 +31,9 @@
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 28px;
+    @media (max-width: $mobileBig) {
+      font-size: 36px;
+    }
   }
 
   // .main__text
@@ -26,6 +41,10 @@
   &__text {
     font-size: 22px;
     margin-bottom: 60px;
+
+    @media (max-width: $mobileBig) {
+      font-size: 16px;
+    }
   }
 
   // .main__block-buttons
@@ -34,11 +53,20 @@
     display: flex;
     align-items: center;
     column-gap: 14px;
+    row-gap: 14px;
+
+    @media (max-width: $mobileBig) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 
   // .main__button
 
   &__button {
+    @media (max-width: $mobileBig) {
+      width: 100%;
+    }
   }
 
   // .main__button-video
@@ -51,6 +79,11 @@
     align-items: center;
     column-gap: 10px;
     background-color: #fff;
+
+    @media (max-width: $mobileBig) {
+      width: 100%;
+      justify-content: center;
+    }
   }
 
   // .main__button-icon

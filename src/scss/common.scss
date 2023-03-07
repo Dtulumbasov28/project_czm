@@ -9,6 +9,11 @@ section {
   text-align: left;
 
   margin-bottom: 48px;
+
+  @media (max-width: $mobile) {
+    font-size: 30px;
+    margin-bottom: 24px;
+  }
 }
 .button {
   display: inline-block;
@@ -153,6 +158,16 @@ section {
     }
   }
 }
+.menu-body__spoller-button {
+  &._spoller-active {
+    .spollers__arrow {
+      & svg {
+        transform: scale(1, -1);
+        transition: all 0.3s;
+      }
+    }
+  }
+}
 
 // Форма
 .form {
@@ -160,6 +175,19 @@ section {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 24px;
+  color: #fff;
+
+  @media (max-width: $mobile) {
+    column-gap: 4%;
+    row-gap: 8px;
+  }
+  @media (max-width: $mobileBig) {
+    column-gap: 10%;
+    row-gap: 8px;
+  }
+  @media (max-width: $mobileSmall) {
+    column-gap: 2%;
+  }
 
   // .form__title
 
@@ -169,7 +197,6 @@ section {
     column-gap: 12px;
     font-size: 32px;
     font-weight: 700;
-    color: #fff;
 
     &::before {
       content: "";
@@ -186,8 +213,6 @@ section {
   // .form__desc
 
   &__desc {
-    color: #fff;
-
     width: 100%;
     margin-bottom: 12px;
   }
@@ -202,6 +227,18 @@ section {
     padding: 10px 15px;
     &::placeholder {
       color: $mainColor;
+    }
+
+    @media (max-width: $mobile) {
+      width: 48%;
+    }
+    @media (max-width: $mobileBig) {
+      width: 45%;
+    }
+    @media (max-width: $mobileSmall) {
+      width: 49%;
+      min-width: 0;
+      font-size: 12px;
     }
   }
 
@@ -259,6 +296,13 @@ section {
     align-items: center;
     column-gap: 8px;
     white-space: nowrap;
+
+    @media (max-width: $mobile) {
+      color: #fff;
+    }
+    @media (max-width: $mobileBig) {
+      white-space: unset;
+    }
 
     &::before {
       content: "";
