@@ -1,4 +1,6 @@
 .map {
+  padding: unset;
+  
   // .map__container
 
   &__container {
@@ -38,6 +40,17 @@
     box-shadow: 2px 2px 20px 0px #00000033;
     white-space: nowrap;
 
+    @media (max-width: $mobile) {
+      left: 24px;
+      font-size: 18px;
+      column-gap: 12px;
+      padding: 14px;
+      white-space: unset;
+    }
+    @media (max-width: $mobileBig) {
+      right: 24px;
+    }
+
     &::before {
       content: "";
       background: $colorElem url("@img/home.svg") center center no-repeat;
@@ -47,6 +60,7 @@
       height: 40px;
       border: 10px solid $colorElem;
       border-radius: var(--radius);
+      flex: 0 0 auto;
     }
   }
 }

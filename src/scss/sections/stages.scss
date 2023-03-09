@@ -16,6 +16,18 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     column-gap: 24px;
+    row-gap: 24px;
+
+    @media (max-width: $pc) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media (max-width: $tablet) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: $mobileBig) {
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 12px;
+    }
   }
 
   // .stages__item
@@ -34,6 +46,10 @@
   &__top {
     background-color: $colorElem;
     padding: 16px;
+
+    @media (max-width: $tablet) {
+      padding: 14px;
+    }
   }
 
   // .stages-item__title
@@ -81,6 +97,9 @@
   // .stages-item__button
 
   &__button {
+    @media (max-width: $tablet) {
+      width: 100%;
+    }
   }
 }
 .button {

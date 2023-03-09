@@ -13,6 +13,18 @@
     align-items: center;
     justify-content: center;
     column-gap: 130px;
+
+    @media (max-width: $notebook) {
+      column-gap: 60px;
+    }
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      row-gap: 52px;
+    }
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      row-gap: 44px;
+    }
   }
 
   // .how-contact__col-text
@@ -27,28 +39,64 @@
     max-width: 340px;
 
     color: #fff;
+
+    @media (max-width: $tablet) {
+      align-items: flex-start;
+      text-align-last: left;
+      width: 80%;
+      max-width: unset;
+    }
+    @media (max-width: $mobileBig) {
+      width: 100%;
+    }
   }
 
   // .how-contact__title
 
   &__title {
     margin-bottom: unset;
+
+    @media (max-width: $mobile) {
+      margin-bottom: -12px;
+    }
   }
 
   // .how-contact__desc
 
   &__desc {
     margin-bottom: 12px;
+    text-align: left;
+
+    @media (max-width: $mobile) {
+      margin-bottom: unset;
+    }
   }
 
+  // .how-contact__block-phone
+
+  &__block-phone {
+    display: flex;
+    column-gap: 28px;
+    row-gap: 24px;
+    flex-direction: column;
+    align-items: flex-end;
+
+    @media (max-width: $tablet) {
+      flex-direction: unset;
+      align-items: center;
+      justify-content: space-between;
+      width: 80%;
+    }
+    @media (max-width: $mobile) {
+      width: 100%;
+      column-gap: 12px;
+    }
+  }
   // .how-contact__phone
 
   &__phone {
     display: flex;
     flex-direction: column;
-    &:not(:last-child) {
-      margin-bottom: 12px;
-    }
   }
 
   // .how-contact__phone-link
@@ -57,6 +105,14 @@
     font-size: 22px;
     font-weight: 700;
     color: $colorElem;
+    white-space: nowrap;
+
+    @media (max-width: $mobileBig) {
+      font-size: 16px;
+    }
+    @media (max-width: $mobileSmall) {
+      font-size: 14px;
+    }
   }
 
   // .how-contact__phone-desc
@@ -64,6 +120,10 @@
   &__phone-desc {
     color: $colorElem;
     opacity: 0.5;
+
+    @media (max-width: $mobileBig) {
+      font-size: 12px;
+    }
   }
 
   // .how-contact__col-form
@@ -71,6 +131,15 @@
   &__col-form {
     width: 58%;
     max-width: 420px;
+
+    @media (max-width: $tablet) {
+      width: 80%;
+      max-width: unset;
+    }
+
+    @media (max-width: $mobileBig) {
+      width: 100%;
+    }
   }
 }
 .consultation {
@@ -81,8 +150,6 @@
 }
 .form {
   // .form__title
-
-
 
   // .form__desc
 

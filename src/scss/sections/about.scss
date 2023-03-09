@@ -16,6 +16,10 @@
   &__desc {
     margin-bottom: 24px;
     padding-right: 70px;
+
+    @media (max-width: $mobile) {
+      padding-right: unset;
+    }
   }
 
   // .about__button
@@ -46,11 +50,21 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     text-align: left;
     column-gap: 130px;
     background-color: #fff;
     border-radius: var(--radius);
     padding: 18px 10px 18px 20px;
+
+    @media (max-width: $tablet) {
+      column-gap: 46px;
+    }
+
+    @media (max-width: $mobile) {
+      column-gap: 24px;
+      padding: 12px;
+    }
   }
 
   // .spollers__title
@@ -58,6 +72,16 @@
   &__title {
     font-size: 22px;
     font-weight: 700;
+
+    @media (max-width: $tablet) {
+      font-size: 20px;
+    }
+    @media (max-width: $mobile) {
+      font-size: 18px;
+    }
+    @media (max-width: $mobileBig) {
+      font-size: 16px;
+    }
   }
 
   // .spollers__arrow
@@ -83,6 +107,10 @@
     padding: 24px 80px 36px 36px;
     background-color: rgba(219, 219, 244, 0.5);
     border-radius: 0 0 var(--radius) var(--radius);
+
+    @media (max-width: $mobile) {
+      padding: 24px 16px 24px 16px;
+    }
   }
   // .spollers__content
 
@@ -129,6 +157,12 @@
   &__block-img {
     display: flex;
     column-gap: 24px;
+    row-gap: 12px;
+
+    @media (max-width: $mobileBig) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   // .spollers__img
@@ -136,6 +170,10 @@
   &__img {
     width: 50%;
     max-height: 230px;
+
+    @media (max-width: $mobileBig) {
+      width: 100%;
+    }
   }
 
   // .spollers__desc
@@ -153,18 +191,11 @@
   // .spollers__list-marker
 
   &__list-marker {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 40px;
-    row-gap: 12px;
   }
 
   // .spollers__item-marker
 
   &__item-marker {
-    display: flex;
-    align-items: center;
-    column-gap: 12px;
   }
 
   // .spollers__text-marker

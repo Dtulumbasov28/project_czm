@@ -2,11 +2,33 @@
   // .licenses__container
 
   &__container {
+    display: flex;
+    column-gap: 24px;
+    row-gap: 36px;
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+    }
   }
 
+  // .licenses__block-text
+
+  &__block-text {
+    max-width: 310px;
+
+    @media (max-width: $tablet) {
+      max-width: unset;
+    }
+  }
   // .licenses__title
 
   &__title {
+    @media (max-width: $tablet) {
+      margin-bottom: 24px;
+    }
+    @media (max-width: $tablet) {
+      margin-bottom: 12px;
+    }
   }
 
   // .licenses__body
@@ -22,7 +44,13 @@
   // .licenses__img
 
   &__img {
-    height: 446px;
+    max-height: 446px;
+
+    & img {
+      @media (max-width: $notebook) {
+        object-fit: contain;
+      }
+    }
   }
 
   // .licenses__navigation

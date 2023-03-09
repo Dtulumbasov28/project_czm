@@ -12,7 +12,17 @@
     display: flex;
     align-items: center;
     column-gap: 24px;
+    row-gap: 24px;
     margin-bottom: 38px;
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 36px;
+    }
+    @media (max-width: $mobileBig) {
+      margin-bottom: 24px;
+    }
   }
 
   // .gallery__title
@@ -24,6 +34,11 @@
   // .gallery__button
 
   &__button {
+    @media (max-width: $mobileBig) {
+      margin-top: 24px;
+      width: 100%;
+      text-align: center;
+    }
   }
 
   // .gallery__body
@@ -55,34 +70,4 @@
 
   &__button-next {
   }
-}
-.swiper {
-  position: relative;
-}
-.swiper-wrapper {
-}
-.swiper-slide {
-}
-.swiper-navigation {
-}
-.swiper-button {
-  position: absolute;
-  top: 50%;
-  width: 40px;
-  height: 40px;
-  background-color: rgba(255, 255, 255, 0.75);
-  border-radius: var(--radius);
-  padding: 8px;
-  & svg {
-    width: 100%;
-    height: 100%;
-  }
-}
-.swiper-button-prev {
-  left: 24px;
-  transform: rotate(180deg) translateY(50%);
-}
-.swiper-button-next {
-  right: 24px;
-  transform: translateY(-50%);
 }

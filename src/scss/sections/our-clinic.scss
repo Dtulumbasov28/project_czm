@@ -9,12 +9,25 @@
   &__body {
     display: flex;
     column-gap: 42px;
+    row-gap: 36px;
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+    }
   }
 
   // .our-clinic__col-text
 
   &__col-text {
     max-width: 400px;
+
+    @media (max-width: $tablet) {
+      width: 50%;
+    }
+    @media (max-width: $mobile) {
+      width: unset;
+      max-width: unset;
+    }
   }
 
   // .our-clinic__title
@@ -27,17 +40,31 @@
 
   &__text {
     margin-bottom: 24px;
+    @media (max-width: $mobileBig) {
+      margin-bottom: unset;
+    }
   }
 
   // .our-clinic__button
 
   &__button {
+    @media (max-width: $mobileBig) {
+      text-align: center;
+    }
   }
 
   // .our-clinic__col-img
 
   &__col-img {
     max-width: 850px;
+
+    @media (max-width: $tablet) {
+      width: 50%;
+    }
+    @media (max-width: $mobile) {
+      width: unset;
+      max-width: unset;
+    }
   }
 
   // .our-clinic__img-wrapper

@@ -41,14 +41,17 @@ $minWidth: 320;
 $maxWidth: 1920;
 // Ширина ограничивающего контейнера (0 = нет ограничения)
 $maxWidthContainer: 1280;
+$maxWidthContainerSidebar: 954;
 // Общий отступ у контейнера
 // (30 = по 15px слева и справа, 0 = нет отступа)
 $containerPadding: 160;
 $containerPaddingSmall: 96;
 $containerPaddingSmallXS: 48;
+$containerPaddingSidebar: 48;
 
 // Ширина срабатывания первого брейкпоинта
 $containerWidth: $maxWidthContainer + $containerPadding;
+$containerWidthSidebar: $maxWidthContainerSidebar + $containerPaddingSidebar;
 
 // Брейк-поинты
 $pc: em(
@@ -84,6 +87,10 @@ body {
   .loaded & {
   }
 }
+// body {
+//   overflow-x: hidden;
+//   height: 100%;
+// }
 
 // Оболочка wrapper ============================================================================================================================================================================================================================================================================================================================================================================================================================================
 .wrapper {
@@ -110,7 +117,8 @@ body {
 */
 @if ($responsiveType==1) {
   // Отзывчивая
-  [class*="__container"] {
+  [class*="__container"],
+  .sidebar {
     @if ($maxWidthContainer>0) {
       max-width: rem($maxWidthContainer);
       box-sizing: content-box;
@@ -125,6 +133,17 @@ body {
     }
     @media (max-width: $mobileBig) {
       padding: 0 rem(math.div($containerPaddingSmallXS, 2));
+    }
+  }
+
+  .sidebar [class*="__container"] {
+    @if ($maxWidthContainer>0) {
+      max-width: rem($maxWidthContainerSidebar);
+      box-sizing: content-box;
+      margin: 0 auto;
+    }
+    @if ($containerPadding>0) {
+      padding: 0 rem(math.div($containerPaddingSidebar, 2));
     }
   }
 } @else {
@@ -184,3 +203,7 @@ body {
 @import "sections/map";
 @import "sections/our-clinic";
 @import "sections/recommendations";
+
+// Подключение стилей блоков сайдбара
+
+@import "sidebar/sidebar-navigation";

@@ -29,7 +29,7 @@
   // .employees__item-img
 
   &__item-img {
-    height: 450px;
+    max-height: 450px;
     margin-bottom: 22px;
   }
 
@@ -62,11 +62,13 @@
   // .employees__button-prev
 
   &__button-prev {
+    top: 42%;
   }
 
   // .employees__button-next
 
   &__button-next {
+    top: 42%;
   }
 }
 .title {

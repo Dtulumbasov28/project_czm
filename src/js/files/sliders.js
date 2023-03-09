@@ -43,17 +43,20 @@ function initSliders() {
 
     // Брейкпоинты
 
-    // breakpoints: {
-    // 	320: {
-    // 		slidesPerView: 1,
-    // 		spaceBetween: 0,
-    // 		autoHeight: true,
-    // 	},
-    // 	768: {
-    // 		slidesPerView: 2,
-    // 		spaceBetween: 20,
-    // 	},
-    // },
+    breakpoints: {
+      1: {
+        slidesPerView: 1,
+        spaceBetween: 24,
+      },
+      575: {
+        slidesPerView: 2,
+        spaceBetween: 24,
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 24,
+      },
+    },
   });
   var employeesSlider = new Swiper(".employees__body", {
     modules: [Navigation],
@@ -70,17 +73,20 @@ function initSliders() {
 
     // Брейкпоинты
 
-    // breakpoints: {
-    // 	320: {
-    // 		slidesPerView: 1,
-    // 		spaceBetween: 0,
-    // 		autoHeight: true,
-    // 	},
-    // 	768: {
-    // 		slidesPerView: 2,
-    // 		spaceBetween: 20,
-    // 	},
-    // },
+    breakpoints: {
+      1: {
+        slidesPerView: 1,
+        spaceBetween: 24,
+      },
+      575: {
+        slidesPerView: 2,
+        spaceBetween: 24,
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 24,
+      },
+    },
   });
   var reviewsWhSlider = new Swiper(".reviews-wh", {
     modules: [Navigation],
@@ -97,17 +103,20 @@ function initSliders() {
 
     // Брейкпоинты
 
-    // breakpoints: {
-    // 	320: {
-    // 		slidesPerView: 1,
-    // 		spaceBetween: 0,
-    // 		autoHeight: true,
-    // 	},
-    // 	768: {
-    // 		slidesPerView: 2,
-    // 		spaceBetween: 20,
-    // 	},
-    // },
+    breakpoints: {
+      1: {
+        slidesPerView: 1,
+      },
+      575: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 3,
+      },
+      1240: {
+        slidesPerView: 4,
+      },
+    },
   });
   var reviewsAudioSlider = new Swiper(".reviews-audio", {
     modules: [Navigation],
@@ -124,45 +133,48 @@ function initSliders() {
 
     // Брейкпоинты
 
-    // breakpoints: {
-    // 	320: {
-    // 		slidesPerView: 1,
-    // 		spaceBetween: 0,
-    // 		autoHeight: true,
-    // 	},
-    // 	768: {
-    // 		slidesPerView: 2,
-    // 		spaceBetween: 20,
-    // 	},
-    // },
-  });
-  var reviewsVideoSlider = new Swiper(".reviews-video", {
-    modules: [Navigation],
-    loop: true,
-    slidesPerView: 3,
-    spaceBetween: 24,
-    speed: 500,
-
-    // Кнопки "влево/вправо"
-    navigation: {
-      prevEl: ".reviews-video__button-prev",
-      nextEl: ".reviews-video__button-next",
+    breakpoints: {
+      1: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 3,
+      },
+      1240: {
+        slidesPerView: 4,
+      },
     },
-
-    // Брейкпоинты
-
-    // breakpoints: {
-    // 	320: {
-    // 		slidesPerView: 1,
-    // 		spaceBetween: 0,
-    // 		autoHeight: true,
-    // 	},
-    // 	768: {
-    // 		slidesPerView: 2,
-    // 		spaceBetween: 20,
-    // 	},
-    // },
   });
+  // var reviewsVideoSlider = new Swiper(".reviews-video", {
+  //   modules: [Navigation],
+  //   loop: true,
+  //   slidesPerView: 3,
+  //   spaceBetween: 24,
+  //   speed: 500,
+
+  //   // Кнопки "влево/вправо"
+  //   navigation: {
+  //     prevEl: ".reviews-video__button-prev",
+  //     nextEl: ".reviews-video__button-next",
+  //   },
+
+  //   // Брейкпоинты
+
+  //   // breakpoints: {
+  //   // 	320: {
+  //   // 		slidesPerView: 1,
+  //   // 		spaceBetween: 0,
+  //   // 		autoHeight: true,
+  //   // 	},
+  //   // 	768: {
+  //   // 		slidesPerView: 2,
+  //   // 		spaceBetween: 20,
+  //   // 	},
+  //   // },
+  // });
   var reviewsTextSlider = new Swiper(".reviews-text", {
     modules: [Navigation],
     loop: true,
@@ -178,22 +190,25 @@ function initSliders() {
 
     // Брейкпоинты
 
-    // breakpoints: {
-    // 	320: {
-    // 		slidesPerView: 1,
-    // 		spaceBetween: 0,
-    // 		autoHeight: true,
-    // 	},
-    // 	768: {
-    // 		slidesPerView: 2,
-    // 		spaceBetween: 20,
-    // 	},
-    // },
+    breakpoints: {
+      1: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 3,
+      },
+      1240: {
+        slidesPerView: 4,
+      },
+    },
   });
   var licensesSlider = new Swiper(".licenses__body", {
     modules: [Navigation],
     loop: true,
-    slidesPerView: 4,
+    slidesPerView: 3,
     spaceBetween: 24,
     speed: 500,
 
@@ -205,50 +220,50 @@ function initSliders() {
 
     // Брейкпоинты
 
-    // breakpoints: {
-    // 	320: {
-    // 		slidesPerView: 1,
-    // 		spaceBetween: 0,
-    // 		autoHeight: true,
-    // 	},
-    // 	768: {
-    // 		slidesPerView: 2,
-    // 		spaceBetween: 20,
-    // 	},
-    // },
-
-    // События
-    on: {},
-  });
-  var newsSlider = new Swiper(".news__body", {
-    modules: [Navigation],
-    slidesPerView: 4,
-    spaceBetween: 24,
-    speed: 500,
-
-    // Кнопки "влево/вправо"
-    navigation: {
-      prevEl: ".news__button-prev",
-      nextEl: ".news__button-next",
+    breakpoints: {
+      1: {
+        slidesPerView: 1,
+      },
+      480: {
+        slidesPerView: 2,
+      },
+      1240: {
+        slidesPerView: 3,
+      },
     },
 
-    // Брейкпоинты
-
-    // breakpoints: {
-    // 	320: {
-    // 		slidesPerView: 1,
-    // 		spaceBetween: 0,
-    // 		autoHeight: true,
-    // 	},
-    // 	768: {
-    // 		slidesPerView: 2,
-    // 		spaceBetween: 20,
-    // 	},
-    // },
-
     // События
     on: {},
   });
+  // var newsSlider = new Swiper(".news__body", {
+  //   modules: [Navigation],
+  //   slidesPerView: 4,
+  //   spaceBetween: 24,
+  //   speed: 500,
+
+  //   // Кнопки "влево/вправо"
+  //   navigation: {
+  //     prevEl: ".news__button-prev",
+  //     nextEl: ".news__button-next",
+  //   },
+
+  //   // Брейкпоинты
+
+  //   // breakpoints: {
+  //   // 	320: {
+  //   // 		slidesPerView: 1,
+  //   // 		spaceBetween: 0,
+  //   // 		autoHeight: true,
+  //   // 	},
+  //   // 	768: {
+  //   // 		slidesPerView: 2,
+  //   // 		spaceBetween: 20,
+  //   // 	},
+  //   // },
+
+  //   // События
+  //   on: {},
+  // });
   var ourClinicSlider = new Swiper(".our-clinic__col-img", {
     modules: [Navigation],
     loop: true,
@@ -264,17 +279,20 @@ function initSliders() {
 
     // Брейкпоинты
 
-    // breakpoints: {
-    // 	320: {
-    // 		slidesPerView: 1,
-    // 		spaceBetween: 0,
-    // 		autoHeight: true,
-    // 	},
-    // 	768: {
-    // 		slidesPerView: 2,
-    // 		spaceBetween: 20,
-    // 	},
-    // },
+    breakpoints: {
+      1: {
+        slidesPerView: 1,
+      },
+      575: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 1,
+      },
+      992: {
+        slidesPerView: 2,
+      },
+    },
 
     // События
     on: {},
@@ -294,17 +312,20 @@ function initSliders() {
 
     // Брейкпоинты
 
-    // breakpoints: {
-    // 	320: {
-    // 		slidesPerView: 1,
-    // 		spaceBetween: 0,
-    // 		autoHeight: true,
-    // 	},
-    // 	768: {
-    // 		slidesPerView: 2,
-    // 		spaceBetween: 20,
-    // 	},
-    // },
+    breakpoints: {
+      1: {
+        slidesPerView: 1,
+      },
+      658: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 3,
+      },
+      1440: {
+        slidesPerView: 4,
+      },
+    },
 
     // События
     on: {},
@@ -324,17 +345,20 @@ function initSliders() {
 
     // Брейкпоинты
 
-    // breakpoints: {
-    // 	320: {
-    // 		slidesPerView: 1,
-    // 		spaceBetween: 0,
-    // 		autoHeight: true,
-    // 	},
-    // 	768: {
-    // 		slidesPerView: 2,
-    // 		spaceBetween: 20,
-    // 	},
-    // },
+    breakpoints: {
+      1: {
+        slidesPerView: 1,
+      },
+      658: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 3,
+      },
+      1440: {
+        slidesPerView: 4,
+      },
+    },
 
     // События
     on: {},

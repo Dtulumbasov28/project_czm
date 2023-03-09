@@ -28,6 +28,12 @@
     flex-wrap: wrap;
     column-gap: 12px;
     row-gap: 12px;
+
+    @media (max-width: $mobile) {
+      width: 100%;
+      column-gap: 8px;
+      row-gap: 8px;
+    }
   }
 
   // .prices__tabs-item
@@ -47,6 +53,13 @@
     color: $mainColor;
     font-weight: 400;
     background-color: #fff;
+
+    @media (max-width: $tablet) {
+      font-size: 14px;
+    }
+    @media (max-width: $mobileBig) {
+      font-size: 12px;
+    }
   }
 
   // .prices__content
@@ -76,12 +89,23 @@
     font-weight: 700;
     color: #fff;
 
+    @media (max-width: $tablet) {
+      font-size: 30px;
+    }
+    @media (max-width: $mobile) {
+      font-size: 28px;
+    }
+    @media (max-width: $mobileBig) {
+      font-size: 22px;
+    }
+
     &::before {
       content: "";
       width: 40px;
       height: 40px;
       background-color: #fff;
       border-radius: var(--radius);
+      flex: 0 0 auto;
     }
   }
 
@@ -90,6 +114,10 @@
   &__content-bottom {
     font-weight: 700;
     padding: 20px 24px 24px 24px;
+
+    @media (max-width: $mobileBig) {
+      padding: 24px 16px;
+    }
   }
 
   // .prices__content-row
@@ -97,6 +125,8 @@
   &__content-row {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    column-gap: 16px;
     padding: 12px 0;
 
     &:not(:last-child) {
@@ -107,6 +137,9 @@
   // .prices__content-heading
 
   &__content-heading {
+    @media (max-width: $mobileBig) {
+      font-size: 14px;
+    }
   }
 
   // .prices__content-price
@@ -114,6 +147,11 @@
   &__content-price {
     font-size: 22px;
     color: $colorElem;
+    white-space: nowrap;
+
+    @media (max-width: $mobileBig) {
+      font-size: 18px;
+    }
   }
 }
 .button {
