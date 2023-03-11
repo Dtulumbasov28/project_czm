@@ -3460,6 +3460,20 @@
             navigation: {
                 prevEl: ".gallery__button-prev",
                 nextEl: ".gallery__button-next"
+            },
+            breakpoints: {
+                1: {
+                    slidesPerView: 1,
+                    spaceBetween: 24
+                },
+                575: {
+                    slidesPerView: 2,
+                    spaceBetween: 24
+                },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 24
+                }
             }
         });
         new core(".employees__body", {
@@ -3470,6 +3484,20 @@
             navigation: {
                 prevEl: ".employees__button-prev",
                 nextEl: ".employees__button-next"
+            },
+            breakpoints: {
+                1: {
+                    slidesPerView: 1,
+                    spaceBetween: 24
+                },
+                575: {
+                    slidesPerView: 2,
+                    spaceBetween: 24
+                },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 24
+                }
             }
         });
         new core(".reviews-wh", {
@@ -3481,6 +3509,20 @@
             navigation: {
                 prevEl: ".reviews-wh__button-prev",
                 nextEl: ".reviews-wh__button-next"
+            },
+            breakpoints: {
+                1: {
+                    slidesPerView: 1
+                },
+                575: {
+                    slidesPerView: 2
+                },
+                992: {
+                    slidesPerView: 3
+                },
+                1240: {
+                    slidesPerView: 4
+                }
             }
         });
         new core(".reviews-audio", {
@@ -3492,17 +3534,20 @@
             navigation: {
                 prevEl: ".reviews-audio__button-prev",
                 nextEl: ".reviews-audio__button-next"
-            }
-        });
-        new core(".reviews-video", {
-            modules: [ Navigation ],
-            loop: true,
-            slidesPerView: 3,
-            spaceBetween: 24,
-            speed: 500,
-            navigation: {
-                prevEl: ".reviews-video__button-prev",
-                nextEl: ".reviews-video__button-next"
+            },
+            breakpoints: {
+                1: {
+                    slidesPerView: 1
+                },
+                768: {
+                    slidesPerView: 2
+                },
+                992: {
+                    slidesPerView: 3
+                },
+                1240: {
+                    slidesPerView: 4
+                }
             }
         });
         new core(".reviews-text", {
@@ -3514,28 +3559,42 @@
             navigation: {
                 prevEl: ".reviews-text__button-prev",
                 nextEl: ".reviews-text__button-next"
+            },
+            breakpoints: {
+                1: {
+                    slidesPerView: 1
+                },
+                768: {
+                    slidesPerView: 2
+                },
+                992: {
+                    slidesPerView: 3
+                },
+                1240: {
+                    slidesPerView: 4
+                }
             }
         });
         new core(".licenses__body", {
             modules: [ Navigation ],
             loop: true,
-            slidesPerView: 4,
+            slidesPerView: 3,
             spaceBetween: 24,
             speed: 500,
             navigation: {
                 prevEl: ".licenses__button-prev",
                 nextEl: ".licenses__button-next"
             },
-            on: {}
-        });
-        new core(".news__body", {
-            modules: [ Navigation ],
-            slidesPerView: 4,
-            spaceBetween: 24,
-            speed: 500,
-            navigation: {
-                prevEl: ".news__button-prev",
-                nextEl: ".news__button-next"
+            breakpoints: {
+                1: {
+                    slidesPerView: 1
+                },
+                480: {
+                    slidesPerView: 2
+                },
+                1240: {
+                    slidesPerView: 3
+                }
             },
             on: {}
         });
@@ -3548,6 +3607,72 @@
             navigation: {
                 prevEl: ".our-clinic__button-prev",
                 nextEl: ".our-clinic__button-next"
+            },
+            breakpoints: {
+                1: {
+                    slidesPerView: 1
+                },
+                575: {
+                    slidesPerView: 2
+                },
+                768: {
+                    slidesPerView: 1
+                },
+                992: {
+                    slidesPerView: 2
+                }
+            },
+            on: {}
+        });
+        new core(".recommendations-rehab", {
+            modules: [ Navigation ],
+            loop: true,
+            slidesPerView: 4,
+            spaceBetween: 24,
+            speed: 500,
+            navigation: {
+                prevEl: ".recommendations__button-prev",
+                nextEl: ".recommendations__button-next"
+            },
+            breakpoints: {
+                1: {
+                    slidesPerView: 1
+                },
+                658: {
+                    slidesPerView: 2
+                },
+                992: {
+                    slidesPerView: 3
+                },
+                1440: {
+                    slidesPerView: 4
+                }
+            },
+            on: {}
+        });
+        new core(".recommendations-drug", {
+            modules: [ Navigation ],
+            loop: true,
+            slidesPerView: 4,
+            spaceBetween: 24,
+            speed: 500,
+            navigation: {
+                prevEl: ".recommendations__button-prev",
+                nextEl: ".recommendations__button-next"
+            },
+            breakpoints: {
+                1: {
+                    slidesPerView: 1
+                },
+                658: {
+                    slidesPerView: 2
+                },
+                992: {
+                    slidesPerView: 3
+                },
+                1440: {
+                    slidesPerView: 4
+                }
             },
             on: {}
         });
@@ -3703,6 +3828,15 @@
         } else console.log("Кнопка вверх отсутствует");
     }
     scrollToTop();
+    let scrollpos = window.scrollY;
+    const header = document.querySelector("header");
+    const scrollChange = 130;
+    const add_class_on_scroll = () => header.classList.add("header-scroll");
+    const remove_class_on_scroll = () => header.classList.remove("header-scroll");
+    window.addEventListener("scroll", (function() {
+        scrollpos = window.scrollY;
+        if (scrollpos >= scrollChange) add_class_on_scroll(); else remove_class_on_scroll();
+    }));
     window["FLS"] = true;
     isWebp();
     menuInit();
