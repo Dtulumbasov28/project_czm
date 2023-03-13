@@ -86,6 +86,10 @@ function initSliders() {
         slidesPerView: 3,
         spaceBetween: 24,
       },
+      // 1340: {
+      //   slidesPerView: 3,
+      //   spaceBetween: 24,
+      // },
     },
   });
   var reviewsWhSlider = new Swiper(".reviews-wh", {

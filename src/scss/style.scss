@@ -64,6 +64,8 @@ $mobileBig: em(574.98); // Телефоны M
 $mobileSmall: em(479.98); // Телефоны S
 $mobileXS: em(399.98); // Телефоны XS
 
+$sidebar: em(1100); // Сайдбар
+
 // Тип адаптива:
 // 1 = отзывчивость (у контейнера нет брейкпоинтов),
 // 2 = по брейк-поинтам (контейнер меняет свою ширину по брейк-поинтам)
@@ -117,8 +119,7 @@ body {
 */
 @if ($responsiveType==1) {
   // Отзывчивая
-  [class*="__container"],
-  .sidebar {
+  [class*="__container"] {
     @if ($maxWidthContainer>0) {
       max-width: rem($maxWidthContainer);
       box-sizing: content-box;
@@ -135,6 +136,27 @@ body {
       padding: 0 rem(math.div($containerPaddingSmallXS, 2));
     }
   }
+  // Отзывчивая
+  .sidebar {
+    @if ($maxWidthContainer>0) {
+      max-width: rem($maxWidthContainer);
+      box-sizing: content-box;
+      margin: 0 auto;
+    }
+    @if ($containerPadding>0) {
+      padding: 0 rem(math.div($containerPadding, 2));
+    }
+
+    @media (max-width: $pc) {
+      margin: 0;
+    }
+    @media (max-width: $notebook) {
+      padding: 0 rem(math.div($containerPaddingSmall, 2));
+    }
+    @media (max-width: $sidebar) {
+      padding: 0;
+    }
+  }
 
   .sidebar [class*="__container"] {
     @if ($maxWidthContainer>0) {
@@ -144,6 +166,13 @@ body {
     }
     @if ($containerPadding>0) {
       padding: 0 rem(math.div($containerPaddingSidebar, 2));
+    }
+
+    @media (max-width: $sidebar) {
+      padding: 0 rem(math.div($containerPaddingSmall, 2));
+    }
+    @media (max-width: $mobileBig) {
+      padding: 0 rem(math.div($containerPaddingSmallXS, 2));
     }
   }
 } @else {
@@ -203,7 +232,12 @@ body {
 @import "sections/map";
 @import "sections/our-clinic";
 @import "sections/recommendations";
+@import "sections/about-sidebar";
+@import "sections/contacts";
 
 // Подключение стилей блоков сайдбара
 
 @import "sidebar/sidebar-navigation";
+@import "sidebar/sidebar-popular";
+@import "sidebar/sidebar-video";
+@import "sidebar/sidebar-articles";

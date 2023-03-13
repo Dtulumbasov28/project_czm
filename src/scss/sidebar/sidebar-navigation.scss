@@ -29,13 +29,6 @@
   // .sidebar-navigation__spollers-title
 
   &__spollers-title {
-    font-weight: 700;
-
-    width: 100%;
-    text-align: left;
-    padding: 18px 0px 12px 0px;
-    border-top: 1px solid #33333359;
-
     &._spoller-active {
       color: $colorElem;
     }
@@ -65,4 +58,13 @@
   }
 }
 .sidebar-title {
+}
+.sidebar-link {
+  font-weight: 700;
+
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 18px 0px 12px 0px;
+  border-top: 1px solid #33333359;
 }

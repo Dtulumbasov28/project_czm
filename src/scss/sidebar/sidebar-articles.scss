@@ -1,0 +1,46 @@
+.sidebar-articles {
+  display: flex;
+  flex-direction: column;
+  background-color: #efeff9;
+  padding: 24px;
+  // .sidebar-articles__title
+
+  &__title {
+  }
+
+  // .sidebar-articles__list
+
+  &__list {
+  }
+
+  // .sidebar-articles__item
+
+  &__item {
+  }
+
+  // .sidebar-articles__date
+
+  &__date {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  // .sidebar-articles__link
+
+  &__link {
+  }
+
+  // .sidebar-articles__button
+
+  &__button {
+    margin-top: 12px;
+  }
+}
+.radius {
+}
+.sidebar-title {
+}
+.sidebar-link {
+}
+.button {
+}

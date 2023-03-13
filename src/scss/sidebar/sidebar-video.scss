@@ -1,0 +1,35 @@
+.sidebar-video {
+  // .sidebar-video__elem
+
+  &__elem {
+    font-size: 20px;
+    padding: 18px 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  // .sidebar-video__text
+
+  &__text {
+  }
+
+  // .sidebar-video__icon
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 4px 4px 4px 5px;
+    & svg {
+      width: 100%;
+      height: 100%;
+      fill: $colorElem;
+    }
+  }
+}

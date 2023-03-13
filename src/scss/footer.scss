@@ -245,9 +245,7 @@
     & .form__input {
       background-color: #dbdbf4;
 
-      @media (max-width: $notebook) {
-        width: calc(50% - 24px);
-      }
+    
     }
     & .form__checkbox-label {
       @media (max-width: $mobile) {
