@@ -15,9 +15,7 @@
   &__body {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    column-gap: 24px;
-    row-gap: 24px;
-
+    gap: 24px;
     @media (max-width: $pc) {
       grid-template-columns: repeat(3, 1fr);
     }
@@ -26,7 +24,7 @@
     }
     @media (max-width: $mobileBig) {
       grid-template-columns: repeat(1, 1fr);
-      row-gap: 12px;
+      gap: 12px;
     }
   }
 

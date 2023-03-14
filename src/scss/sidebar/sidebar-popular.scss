@@ -1,4 +1,13 @@
 .sidebar-popular {
+  @media (max-width: $sidebar) {
+    max-width: rem($maxWidthContainer);
+    box-sizing: content-box;
+    margin: 24px auto 0 auto;
+    padding: 0 rem(math.div($containerPaddingSmall, 2));
+  }
+  @media (max-width: $mobileBig) {
+    padding: 0 rem(math.div($containerPaddingSmallXS, 2));
+  }
   // .sidebar-popular__title
 
   &__title {
@@ -7,9 +16,16 @@
   // .sidebar-popular__list
 
   &__list {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     gap: 12px;
+
+    @media (max-width: $sidebar) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: $mobile) {
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
   }
 
   // .sidebar-popular__item

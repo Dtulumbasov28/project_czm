@@ -367,6 +367,39 @@ function initSliders() {
     // События
     on: {},
   });
+  var spollersAlcoSlider = new Swiper(".spollers-alcoholism__slider", {
+    modules: [Navigation],
+    loop: true,
+    slidesPerView: 4,
+    spaceBetween: 12,
+    speed: 500,
+
+    // Кнопки "влево/вправо"
+    navigation: {
+      prevEl: ".spollers-alcoholism__button-prev",
+      nextEl: ".spollers-alcoholism__button-next",
+    },
+
+    // Брейкпоинты
+
+    breakpoints: {
+      1: {
+        slidesPerView: 1,
+      },
+      658: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 3,
+      },
+      1440: {
+        slidesPerView: 4,
+      },
+    },
+
+    // События
+    on: {},
+  });
 }
 // Скролл на базе слайдера (по классу swiper_scroll для оболочки слайдера)
 function initSlidersScroll() {

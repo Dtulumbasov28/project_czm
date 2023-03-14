@@ -59,7 +59,7 @@
   // .recommendations-tabs__buttons
 
   &__buttons {
-    display: flex;
+    display: inline-flex;
     column-gap: 12px;
     row-gap: 12px;
     margin-bottom: 48px;
@@ -92,7 +92,7 @@
   &__button {
     font-weight: 500;
     color: $mainColor;
-    background-color: #dbdbf4;
+    background-color: rgba(78, 67, 191, 0.1);
 
     @media (max-width: $mobile) {
       font-size: 12px;
@@ -109,6 +109,10 @@
 
   &__body {
     padding: 10px;
+
+    @media (max-width: $mobileSmall) {
+      padding: unset;
+    }
   }
 
   // .recommendations-tabs__body-wrapper
@@ -128,6 +132,10 @@
 }
 .recommendations-slide {
   box-shadow: 1px 1px 10px 0px #0000001a;
+
+  @media (max-width: $mobileSmall) {
+    box-shadow: unset;
+  }
 
   // .recommendations-slide__img
 

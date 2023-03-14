@@ -129,14 +129,7 @@
   &__slide {
     height: 450px;
 
-    @media (max-width: $mobileBig) {
-      height: 350px;
-      padding: 0 52px;
-    }
-    @media (max-width: $mobileSmall) {
-      height: 250px;
-      padding: 0 52px;
-    }
+  
   }
 
   // .reviews-wh__img
