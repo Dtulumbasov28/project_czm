@@ -1998,8 +1998,7 @@ section {
 }
 
 .how-contact__phone-desc {
-  color: #4e44bf;
-  opacity: 0.5;
+  color: rgba(219, 219, 244, 0.5);
 }
 
 .how-contact__col-form {
