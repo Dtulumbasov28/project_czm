@@ -118,8 +118,7 @@
   // .how-contact__phone-desc
 
   &__phone-desc {
-    color: $colorElem;
-    opacity: 0.5;
+    color: rgba(219, 219, 244, 0.5);
 
     @media (max-width: $mobileBig) {
       font-size: 12px;
