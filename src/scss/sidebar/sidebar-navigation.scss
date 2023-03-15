@@ -36,7 +36,6 @@
   // .sidebar-navigation__spollers-body
 
   &__spollers-body {
-    margin-bottom: 24px;
   }
 
   // .sidebar-navigation__spollers-list
@@ -50,6 +49,9 @@
   // .sidebar-navigation__spollers-item
 
   &__spollers-item {
+    &:last-child {
+      margin-bottom: 24px;
+    }
   }
 
   // .sidebar-navigation__spollers-link

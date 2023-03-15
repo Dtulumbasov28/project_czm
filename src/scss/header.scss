@@ -10,7 +10,7 @@
   flex-direction: column;
   background-color: #fff;
 
-  @media (max-width: $notebook) {
+  @media (max-width: $tablet) {
     position: unset;
     top: unset;
     width: unset;
@@ -39,7 +39,7 @@
   padding: 40px 0 34px 0;
 
   @media (max-width: $notebook) {
-    padding: 24px 0;
+    padding: 24px 0 12px 0;
   }
   @media (max-width: $mobile) {
     padding: 24px 0 12px 0;
@@ -534,19 +534,32 @@
     // .menu-body__spoller
 
     &__spoller {
+      position: relative;
+      padding: 12px 48px;
+
+      @media (max-width: $mobileBig) {
+        padding: 12px 24px;
+      }
     }
-
-    // .menu-body__spoller-button
-
-    &__spoller-button {
+    // .menu-body__spoller-title
+    &__spoller-title {
       font-weight: 700;
 
       position: relative;
+      z-index: 1;
+      padding: 12px 24px 12px 0;
+    }
+    // .menu-body__spoller-button
+
+    &__spoller-button {
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding: 12px 48px;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: flex-end;
       width: 100%;
-      padding: 12px 48px;
       cursor: pointer;
 
       @media (max-width: $mobileBig) {
@@ -574,7 +587,7 @@
     // .menu-body__spoller-content
 
     &__spoller-content {
-      padding: 0px 48px;
+      padding: 18px 0px 0px 0px;
     }
 
     // .menu-body__spoller-item

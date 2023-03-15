@@ -1,13 +1,36 @@
-<!-- <div id="popup" aria-hidden="true" class="popup">
+<div id="popup-call" aria-hidden="true" class="popup">
 	<div class="popup__wrapper">
 		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
-				Text
-			</div>
+			<form class="popup__form form form_size_small radius" action="#" method="#">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="form__title">Оставить заявку</div>
+				<div class="form__desc">Оставьте свои контактные данные и мы перезвоним вам</div>
+				<input class="form__input form__input-name" placeholder="Имя" title="Введите имя" required=""
+					type="text" name="name" autocomplete="off"
+					onkeyup="this.value = this.value.replace(/[a-z0-9+= ]/gi,'');">
+				<input class="form__input form__input-tel" placeholder="Телефон" title="Введите номер телефона"
+					required="" type="tel" name="tel" autocomplete="off">
+				<input class="form__button button" type="submit" value="Перезвоните мне">
+				<div class="form__checkbox-group">
+					<input type="checkbox" class="form__checkbox">
+					<label class="form__checkbox-label" for="main-form__input-checkbox">
+						<div>
+							<span>
+								Согласен с
+							</span>
+							<a href="#">
+								пользовательским соглашением
+							</a>
+							<span>
+								по обработке персональных данных
+							</span>
+						</div>
+					</label>
+				</div>
+			</form>
 		</div>
 	</div>
-</div> -->
+</div>
 
 <div class="go-top">
 	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px"

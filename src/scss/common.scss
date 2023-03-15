@@ -374,6 +374,11 @@ section {
   }
 }
 
+.contacts__body iframe,
+.map__body iframe {
+  width: 100%;
+}
+
 // Блок соц. сетей
 .socials {
   display: flex;
@@ -494,12 +499,11 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  column-gap: 24px;
-  row-gap: 24px;
+  gap: 24px;
   color: #fff;
 
   @media (max-width: $mobileSmall) {
-    column-gap: 12px;
+    gap: 12px;
   }
 
   // .form__title
@@ -538,19 +542,18 @@ section {
 
   &__input {
     color: $mainColor;
-    width: calc(51% - 24px);
+    width: calc(50% - 12px);
     outline: none;
     border-radius: var(--radius);
     padding: 10px 15px;
     &::placeholder {
       color: $mainColor;
     }
-    @media (max-width: $notebook) {
-      width: calc(50% - 24px);
-    }
+
     @media (max-width: $mobileSmall) {
       font-size: 12px;
-      width: calc(51% - 12px);
+      width: calc(50% - 6px);
+      padding: 10px 10px;
     }
   }
 
@@ -633,7 +636,26 @@ section {
       border-bottom: 1px solid #9a89c9;
     }
   }
+
+  // .form_size_small
+  &_size_small {
+    background-color: #fff;
+    padding: 24px 30px 30px 30px;
+    color: $mainColor;
+    max-width: 470px;
+
+    & .form__input {
+      background-color: #dbdbf4;
+    }
+
+    & .form__checkbox-label {
+      @media (max-width: $mobile) {
+        color: #9a89c9;
+      }
+    }
+  }
 }
+
 // swiper
 .swiper {
   position: relative;
@@ -691,6 +713,11 @@ section {
       color: $colorElem;
     }
   }
+  a.how-contact__phone-link {
+    &:hover {
+      color: #fff;
+    }
+  }
 
   .header-bottom__menu-link {
     position: relative;
@@ -740,6 +767,11 @@ section {
       & svg {
         fill: #fff;
       }
+    }
+  }
+  .popup__close {
+    &:hover {
+      background-color: $colorElem;
     }
   }
 }

@@ -19,6 +19,9 @@
       column-gap: 60px;
     }
     @media (max-width: $notebook) {
+      column-gap: 10px;
+    }
+    @media (max-width: $sidebar) {
       flex-direction: column;
     }
     @media (max-width: $mobileBig) {
@@ -203,15 +206,9 @@
 
   &__bottom {
   }
-
   // .footer-right__form
 
   &__form {
-    background-color: #fff;
-    padding: 24px 30px 30px 30px;
-    color: $mainColor;
-    max-width: 470px;
-
     @media (max-width: $notebook) {
       max-width: unset;
       text-align: center;
@@ -242,11 +239,6 @@
         text-align: left;
       }
     }
-    & .form__input {
-      background-color: #dbdbf4;
-
-    
-    }
     & .form__checkbox-label {
       @media (max-width: $mobile) {
         color: #9a89c9;
@@ -257,6 +249,7 @@
     }
   }
 }
+
 .footer-phone {
   display: flex;
   column-gap: 34px;
