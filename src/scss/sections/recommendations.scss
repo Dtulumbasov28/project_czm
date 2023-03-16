@@ -60,6 +60,7 @@
 
   &__buttons {
     display: inline-flex;
+    flex-wrap: wrap;
     column-gap: 12px;
     row-gap: 12px;
     margin-bottom: 48px;
@@ -71,7 +72,6 @@
       column-gap: 8px;
     }
     @media (max-width: $mobileBig) {
-      flex-direction: column;
       margin-bottom: 24px;
     }
   }
@@ -103,6 +103,10 @@
   // .recommendations-tabs__content
 
   &__content {
+    @media (max-width: $mobileSmall) {
+      box-shadow: 1px 1px 10px 0px #0000001a;
+      border-radius: var(--radius);
+    }
   }
 
   // .recommendations-tabs__body

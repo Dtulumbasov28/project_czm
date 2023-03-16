@@ -80,7 +80,7 @@
 
     @media (max-width: $mobile) {
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: space-around;
     }
     @media (max-width: $mobileBig) {
       column-gap: 10px;

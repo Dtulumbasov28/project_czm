@@ -76,8 +76,14 @@
     color: $colorElem;
 
     margin-bottom: 24px;
+
     @media (max-width: $mobile) {
       color: #fff;
+    }
+
+    @media (max-width: $mobileBig) {
+      padding-right: 40%;
+      margin-bottom: 12px;
     }
     & span {
       color: #fff;
@@ -94,6 +100,16 @@
   // .consultation__form
 
   &__form {
+    & .form__desc {
+      @media (max-width: $mobileBig) {
+        font-size: 14px;
+        padding-right: 38%;
+      }
+
+      @media (max-width: $mobileSmall) {
+        margin-bottom: 0;
+      }
+    }
   }
 }
 

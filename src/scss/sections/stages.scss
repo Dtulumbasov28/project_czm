@@ -77,6 +77,10 @@
     row-gap: 24px;
     height: 100%;
     padding: 30px 24px;
+
+    @media (max-width: $mobile) {
+      padding: 24px;
+    }
   }
 
   // .stages-item__list
