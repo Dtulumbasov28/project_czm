@@ -2138,6 +2138,10 @@ section {
           flex: 0 0 auto;
 }
 
+.our-clinic {
+  background-color: #fff;
+}
+
 .our-clinic__body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2193,6 +2197,8 @@ section {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-column-gap: 12px;
      -moz-column-gap: 12px;
           column-gap: 12px;
@@ -3571,9 +3577,8 @@ section {
   .header-top__row-top {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 
   .header-top__logo {
@@ -3695,6 +3700,10 @@ section {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+
+  .stages-item__bottom {
+    padding: 24px;
   }
 
   .reviews__desc {
@@ -4005,6 +4014,16 @@ section {
             justify-content: center;
   }
 
+  .consultation__title {
+    padding-right: 40%;
+    margin-bottom: 12px;
+  }
+
+  .consultation__form .form__desc {
+    font-size: 14px;
+    padding-right: 38%;
+  }
+
   .prices__tabs-button {
     font-size: 12px;
   }
@@ -4130,10 +4149,6 @@ section {
   }
 
   .recommendations-tabs__buttons {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     margin-bottom: 24px;
   }
 
@@ -4208,6 +4223,10 @@ section {
     font-size: 14px;
   }
 
+  .title {
+    font-size: 24px;
+  }
+
   .form {
     gap: 12px;
   }
@@ -4246,6 +4265,10 @@ section {
     z-index: 1;
   }
 
+  .consultation__form .form__desc {
+    margin-bottom: 0;
+  }
+
   .reviews-tabs__button {
     font-size: 12px;
     padding: 10px 14px;
@@ -4253,6 +4276,12 @@ section {
 
   .how-contact__phone-link {
     font-size: 14px;
+  }
+
+  .recommendations-tabs__content {
+    -webkit-box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.1019607843);
+            box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.1019607843);
+    border-radius: var(--radius);
   }
 
   .recommendations-tabs__body {
